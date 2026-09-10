@@ -706,11 +706,6 @@
             <div class="cat-box-title">كبار السن</div>
           </div>
         </div>
-
-        <div class="sections-header">
-          <h2>أحدث المنتجات الطبية المتوفرة</h2>
-        </div>
-        <div class="products-grid" id="home-featured-products-list"></div>
       </section>
     </div>
 
@@ -1011,7 +1006,6 @@
       { id: 9, name: "جهاز قياس ضغط الدم ديجيتال", ing: "Omron Medical Device", cat: "medical_supplies", price: 1450, rx: false, img: googleMedicineKnowledgeBase["pressure"].img }
     ];
 
-    // تفعيل التخزين السحابي العالمي المباشر لترى كل المنتجات فوراً
     let medicines = JSON.parse(localStorage.getItem("jb_cloud_meds")) || defaultMedicines;
     let cart = JSON.parse(localStorage.getItem("jb_cart")) || [];
     let staffMembers = JSON.parse(localStorage.getItem("jb_staff_members")) || [{ name: "د. أحمد الجبيلي", phone: "01554452399" }];
@@ -1055,7 +1049,6 @@
       currentSelectedCategoryKey = null;
       document.getElementById("dedicated-category-page-view").style.display = "none";
       document.getElementById("home-page-view").style.display = "block";
-      renderHomeFeaturedProducts();
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
@@ -1092,22 +1085,9 @@
       return card;
     }
 
-    function renderHomeFeaturedProducts() {
-      const container = document.getElementById("home-featured-products-list");
-      container.innerHTML = "";
-      medicines.slice(0, 12).forEach(med => container.appendChild(createMedicineCardElement(med)));
-    }
-
     document.getElementById("main-search").addEventListener("input", (e) => {
       const q = e.target.value.toLowerCase().trim();
-      const container = document.getElementById("home-featured-products-list");
-      container.innerHTML = "";
-      const filtered = medicines.filter(m => m.name.toLowerCase().includes(q) || m.ing.toLowerCase().includes(q));
-      if (filtered.length === 0) {
-        container.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 25px;">لا توجد نتائج بحث مطابقة.</p>`;
-        return;
-      }
-      filtered.forEach(med => container.appendChild(createMedicineCardElement(med)));
+      if (!q) return;
     });
 
     function saveCart() {
@@ -1265,7 +1245,6 @@
       }, 400);
     };
 
-    // حفظ الدواء وتحديثه في التخزين السحابي العالمي لكي يظهر للجميع فوراً
     document.getElementById("dash-add-med-form").onsubmit = (e) => {
       e.preventDefault();
       const editId = document.getElementById("edit-med-id").value;
@@ -1288,9 +1267,7 @@
         showToast("تم نشر المنتج الجديد للعملاء فوراً!");
       }
 
-      // حفظ في التخزين السحابي العالمي
       localStorage.setItem("jb_cloud_meds", JSON.stringify(medicines));
-      renderHomeFeaturedProducts();
       updateMedsCount();
       document.getElementById("dash-add-med-form").reset();
       showDashboardSection('manage');
@@ -1331,7 +1308,6 @@
       if (confirm("هل تريد حذف هذا المنتج نهائياً من الموقع؟")) {
         medicines = medicines.filter(m => m.id != id);
         localStorage.setItem("jb_cloud_meds", JSON.stringify(medicines));
-        renderHomeFeaturedProducts();
         renderStaffMedicinesList();
         showToast("تم الحذف بنجاح");
       }
@@ -1389,7 +1365,6 @@
 
     overlay.onclick = () => { toggleCart(false); authModal.classList.remove("active"); dashboardModal.classList.remove("active"); checkoutModal.classList.remove("active"); };
 
-    renderHomeFeaturedProducts();
     updateCartUI();
     if (sessionUser) document.getElementById("nav-user-label").innerText = sessionUser.name.split(" ")[0];
   </script>
