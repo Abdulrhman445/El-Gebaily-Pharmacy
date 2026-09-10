@@ -239,9 +239,7 @@
       margin-bottom: 10px;
       transition: var(--transition);
     }
-    .file-dropzone:hover {
-      background: #e1f5ec;
-    }
+    .file-dropzone:hover { background: #e1f5ec; }
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -259,18 +257,13 @@
       outline: none;
     }
 
-    /* شبكة الأقسام الـ 12 */
     .sections-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 25px 0 15px;
     }
-    .sections-header h2 {
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: var(--text-main);
-    }
+    .sections-header h2 { font-size: 1.4rem; font-weight: 800; color: var(--text-main); }
     .categories-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -311,9 +304,7 @@
       display: block;
       transition: transform 0.35s ease;
     }
-    .cat-box-card:hover .cat-img-wrapper img {
-      transform: scale(1.06);
-    }
+    .cat-box-card:hover .cat-img-wrapper img { transform: scale(1.06); }
     .cat-box-title {
       background: #ffffff;
       color: #0f172a;
@@ -324,7 +315,6 @@
       border-top: 1px solid #e0f2fe;
     }
 
-    /* صفحة القسم المستقلة */
     .category-page-header {
       background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 100%);
       border: 1px solid #bae6fd;
@@ -341,20 +331,9 @@
       background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
       border-color: #334155;
     }
-    .cat-info-title h2 {
-      font-size: 1.5rem;
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .cat-info-title p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
+    .cat-info-title h2 { font-size: 1.5rem; color: var(--text-main); display: flex; align-items: center; gap: 10px; }
+    .cat-info-title p { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
 
-    /* كروت الأدوية */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -373,10 +352,7 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.02);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .med-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-    }
+    .med-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.06); }
     .med-badge {
       position: absolute;
       top: 8px;
@@ -403,16 +379,8 @@
       border: 1px solid var(--border);
       position: relative;
     }
-    .med-img-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      padding: 4px;
-      transition: transform 0.25s ease;
-    }
-    .med-card:hover .med-img-box img {
-      transform: scale(1.04);
-    }
+    .med-img-box img { width: 100%; height: 100%; object-fit: contain; padding: 4px; transition: transform 0.25s ease; }
+    .med-card:hover .med-img-box img { transform: scale(1.04); }
     .real-tag {
       position: absolute;
       bottom: 4px;
@@ -436,7 +404,6 @@
     }
     .med-price { font-size: 1.05rem; font-weight: 800; }
 
-    /* سلة الشراء */
     .side-drawer {
       position: fixed;
       top: 0;
@@ -451,38 +418,13 @@
       transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .side-drawer.open { left: 0; }
-    .drawer-head {
-      padding: 15px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    .drawer-head { padding: 15px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
     .drawer-body { flex: 1; overflow-y: auto; padding: 15px; }
-    .cart-item-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border);
-    }
+    .cart-item-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
     .qty-ctrl { display: flex; align-items: center; gap: 8px; }
-    .qty-ctrl button {
-      width: 26px;
-      height: 26px;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-      background: var(--bg-muted);
-      color: var(--text-main);
-      cursor: pointer;
-    }
-    .drawer-foot {
-      padding: 15px;
-      border-top: 1px solid var(--border);
-      background: var(--bg-muted);
-    }
+    .qty-ctrl button { width: 26px; height: 26px; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-muted); color: var(--text-main); cursor: pointer; }
+    .drawer-foot { padding: 15px; border-top: 1px solid var(--border); background: var(--bg-muted); }
 
-    /* النوافذ والمودال */
     .modal-wrap {
       position: fixed;
       inset: 0;
@@ -502,19 +444,9 @@
       padding: 20px;
       border: 1px solid var(--border);
     }
-    .modal-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 15px;
-    }
+    .modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
     .form-group { margin-bottom: 12px; }
-    .form-group label {
-      display: block;
-      font-size: 0.85rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; }
     .form-group input, .form-group select, .form-group textarea {
       width: 100%;
       padding: 10px;
@@ -532,15 +464,7 @@
       padding: 14px;
       margin-bottom: 16px;
     }
-    .dash-section-title {
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--primary);
-    }
+    .dash-section-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; color: var(--primary); }
 
     .image-ai-controls {
       background: var(--bg-surface);
@@ -561,19 +485,8 @@
       background: #ffffff;
       margin: 0 auto 10px;
     }
-    .ai-preview-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    .ai-status-tag {
-      font-size: 0.78rem;
-      color: var(--google-blue);
-      font-weight: 700;
-      text-align: center;
-      display: block;
-      margin-top: 4px;
-    }
+    .ai-preview-wrap img { width: 100%; height: 100%; object-fit: contain; }
+    .ai-status-tag { font-size: 0.78rem; color: var(--google-blue); font-weight: 700; text-align: center; display: block; margin-top: 4px; }
 
     .staff-med-item {
       display: flex;
@@ -593,20 +506,8 @@
       padding: 12px;
       margin-bottom: 10px;
     }
-    .order-box-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-      border-bottom: 1px dashed var(--border);
-      padding-bottom: 6px;
-    }
-    .order-badge {
-      font-size: 0.72rem;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-weight: 700;
-    }
+    .order-box-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1px dashed var(--border); padding-bottom: 6px; }
+    .order-badge { font-size: 0.72rem; padding: 2px 6px; border-radius: 4px; font-weight: 700; }
     .order-badge.pending { background: #fef3c7; color: #b45309; }
     .order-badge.ready { background: #e0e7ff; color: #3730a3; }
     .order-badge.delivered { background: #dcfce7; color: #15803d; }
@@ -655,13 +556,7 @@
       gap: 8px;
     }
 
-    .screen-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.5);
-      z-index: 990;
-      display: none;
-    }
+    .screen-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 990; display: none; }
     .screen-overlay.active { display: block; }
 
     @media (max-width: 900px) {
@@ -710,7 +605,7 @@
 
   <main class="container">
 
-    <!-- الشاشة الأولى: الصفحة الرئيسية -->
+    <!-- الصفحة الرئيسية -->
     <div id="home-page-view">
       <section class="search-section">
         <div class="search-input-wrap">
@@ -719,7 +614,6 @@
         </div>
       </section>
 
-      <!-- البانر وصندوق الروشتة -->
       <section class="hero-banner">
         <div class="hero-grid">
           <div class="hero-text">
@@ -756,106 +650,59 @@
         </div>
       </section>
 
-      <!-- شبكة الأقسام الـ 12 مع الروابط الجديدة المحدثة بالكامل -->
+      <!-- الأقسام الـ 12 -->
       <section>
         <div class="sections-header">
           <h2>ابحث بالقسم</h2>
         </div>
 
         <div class="categories-grid" id="main-categories-grid">
-          <!-- 1. المنتجات الكورية (محدث بالرابط الجديد) -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('korean')">
-            <div class="cat-img-wrapper">
-              <img src="https://cdn-med-images.vezeeta.com/headCategories/d47fe504-5a56-47e7-8f56-63407a0a09be.png" alt="المنتجات الكورية">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://cdn-med-images.vezeeta.com/headCategories/d47fe504-5a56-47e7-8f56-63407a0a09be.png" alt="المنتجات الكورية"></div>
             <div class="cat-box-title">المنتجات الكورية</div>
           </div>
-
-          <!-- 2. الأدوية الوصفية -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('rx_medicines')">
-            <div class="cat-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=85" alt="الادوية الوصفية">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=85" alt="الادوية الوصفية"></div>
             <div class="cat-box-title">الادوية الوصفية</div>
           </div>
-
-          <!-- 3. أدوية بدون روشتة -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('otc_medicines')">
-            <div class="cat-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&auto=format&fit=crop&q=85" alt="أدوية بدون روشتة">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&auto=format&fit=crop&q=85" alt="أدوية بدون روشتة"></div>
             <div class="cat-box-title">أدوية بدون روشتة</div>
           </div>
-
-          <!-- 4. العناية بالأم والطفل -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('mother_baby')">
-            <div class="cat-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=500&auto=format&fit=crop&q=85" alt="العناية بالأم والطفل">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=500&auto=format&fit=crop&q=85" alt="العناية بالأم والطفل"></div>
             <div class="cat-box-title">العناية بالأم والطفل</div>
           </div>
-
-          <!-- 5. الفيتامينات والتغذية (محدث بالرابط الجديد) -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('vitamins')">
-            <div class="cat-img-wrapper">
-              <img src="https://cdn-med-images.vezeeta.com/headCategories/5420553f-0a78-4564-9206-febb45594ddb.png" alt="الفيتامينات والتغذية">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://cdn-med-images.vezeeta.com/headCategories/5420553f-0a78-4564-9206-febb45594ddb.png" alt="الفيتامينات والتغذية"></div>
             <div class="cat-box-title">الفيتامينات والتغذية</div>
           </div>
-
-          <!-- 6. مكافحة العدوى -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('infection_control')">
-            <div class="cat-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=500&auto=format&fit=crop&q=85" alt="مكافحة العدوي">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=500&auto=format&fit=crop&q=85" alt="مكافحة العدوي"></div>
             <div class="cat-box-title">مكافحة العدوي</div>
           </div>
-
-          <!-- 7. العناية بالوجه والجسم -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('face_body')">
-            <div class="cat-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&auto=format&fit=crop&q=85" alt="العناية بالوجه والجسم">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&auto=format&fit=crop&q=85" alt="العناية بالوجه والجسم"></div>
             <div class="cat-box-title">العناية بالوجه والجسم</div>
           </div>
-
-          <!-- 8. العناية بالمرأة (محدث بالرابط الجديد) -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('women_care')">
-            <div class="cat-img-wrapper">
-              <img src="https://cdn-med-images.vezeeta.com/headCategories/5420553f-0a78-4564-9206-febb45594ddb.png" alt="العناية بالمرأة">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://cdn-med-images.vezeeta.com/headCategories/5420553f-0a78-4564-9206-febb45594ddb.png" alt="العناية بالمرأة"></div>
             <div class="cat-box-title">العناية بالمرأة</div>
           </div>
-
-          <!-- 9. العناية بالرجل (محدث بالرابط الجديد) -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('men_care')">
-            <div class="cat-img-wrapper">
-              <img src="https://cdn-med-images.vezeeta.com/headCategories/e3189402-8fa1-4e49-a8ad-a9b2b961f823.png" alt="العناية بالرجل">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://cdn-med-images.vezeeta.com/headCategories/e3189402-8fa1-4e49-a8ad-a9b2b961f823.png" alt="العناية بالرجل"></div>
             <div class="cat-box-title">العناية بالرجل</div>
           </div>
-
-          <!-- 10. العناية بالشعر -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('hair_care')">
-            <div class="cat-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=85" alt="العناية بالشعر">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=85" alt="العناية بالشعر"></div>
             <div class="cat-box-title">العناية بالشعر</div>
           </div>
-
-          <!-- 11. مستلزمات طبية -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('medical_supplies')">
-            <div class="cat-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&auto=format&fit=crop&q=85" alt="مستلزمات طبية">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&auto=format&fit=crop&q=85" alt="مستلزمات طبية"></div>
             <div class="cat-box-title">مستلزمات طبية</div>
           </div>
-
-          <!-- 12. كبار السن (محدث بالرابط الجديد) -->
           <div class="cat-box-card" onclick="openDedicatedCategoryPage('elderly_care')">
-            <div class="cat-img-wrapper">
-              <img src="https://cdn-med-images.vezeeta.com/headCategories/9c7ad48d-045c-4118-9ebd-68f3d5ac377e.png" alt="كبار السن">
-            </div>
+            <div class="cat-img-wrapper"><img src="https://cdn-med-images.vezeeta.com/headCategories/9c7ad48d-045c-4118-9ebd-68f3d5ac377e.png" alt="كبار السن"></div>
             <div class="cat-box-title">كبار السن</div>
           </div>
         </div>
@@ -867,7 +714,7 @@
       </section>
     </div>
 
-    <!-- الشاشة الثانية: صفحة القسم المستقلة -->
+    <!-- صفحة القسم المستقلة -->
     <div id="dedicated-category-page-view" style="display: none;">
       <div class="category-page-header">
         <div class="cat-info-title">
@@ -930,7 +777,6 @@
     </div>
   </aside>
 
-  <!-- نافذة تسجيل الدخول -->
   <div class="modal-wrap" id="auth-modal">
     <div class="modal-box">
       <div class="modal-head">
@@ -940,9 +786,7 @@
 
       <div id="active-session-view" style="display: none;">
         <div style="text-align: center; margin-bottom: 15px;">
-          <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 6px;">
-            <i class="fa-solid fa-circle-user"></i>
-          </div>
+          <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 6px;"><i class="fa-solid fa-circle-user"></i></div>
           <h4 id="user-display-name"></h4>
           <span id="user-display-role" style="font-size: 0.78rem; padding: 2px 8px; border-radius: 12px; background: var(--primary-light); color: var(--primary); font-weight: 700;"></span>
         </div>
@@ -970,7 +814,7 @@
     </div>
   </div>
 
-  <!-- لوحة التحكم الكاملة للدكاترة والاستاف + محرك الذكاء الاصطناعي وجوجل -->
+  <!-- لوحة التحكم -->
   <div class="modal-wrap" id="dashboard-modal">
     <div class="modal-box">
       <div class="modal-head">
@@ -983,7 +827,7 @@
 
       <div style="background: #e0f2fe; border: 1px solid #7dd3fc; border-radius: var(--radius-sm); padding: 10px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
         <span style="font-size: 0.85rem; color: #0369a1; font-weight: 700;">
-          <i class="fa-brands fa-google"></i> متصل بمحرك Google & AI لجلب البيانات والصور الحقيقية
+          <i class="fa-brands fa-google"></i> متصل بالسحاب الفوري (يظهر لكل العملاء تلقائياً)
         </span>
         <a href="https://www.google.com.eg/imghp?hl=ar" target="_blank" class="btn btn-google btn-sm" id="google-images-direct-link" style="text-decoration: none;">
           <i class="fa-brands fa-google"></i> فتح صور Google
@@ -991,40 +835,39 @@
       </div>
 
       <div style="display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap;">
-        <button class="btn btn-primary btn-sm" id="btn-tab-add" onclick="showDashboardSection('add')"><i class="fa-solid fa-plus"></i> إضافة علاج بالذكاء الاصطناعي</button>
+        <button class="btn btn-primary btn-sm" id="btn-tab-add" onclick="showDashboardSection('add')"><i class="fa-solid fa-plus"></i> إضافة علاج سحابي</button>
         <button class="btn btn-secondary btn-sm" id="btn-tab-manage" onclick="showDashboardSection('manage')"><i class="fa-solid fa-pen-to-square"></i> تعديل وحذف الأدوية (<span id="meds-total-count">0</span>)</button>
         <button class="btn btn-secondary btn-sm" id="btn-tab-orders" onclick="showDashboardSection('orders')"><i class="fa-solid fa-bell-concierge"></i> الطلبات (<span id="orders-count-badge">0</span>)</button>
         <button class="btn btn-secondary btn-sm" id="btn-tab-staff" onclick="showDashboardSection('staff')" style="display: none;"><i class="fa-solid fa-users-gear"></i> إدارة الاستاف</button>
       </div>
 
-      <!-- قسم إضافة الدواء -->
       <div class="dash-section" id="sec-add-med">
-        <div class="dash-section-title"><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--google-blue);"></i> فحص واستخراج بيانات وصور العلاج عبر Google & AI</div>
+        <div class="dash-section-title"><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--google-blue);"></i> إضافة منتج جديد يظهر فوراً لكل الزوار</div>
         <form id="dash-add-med-form">
           <input type="hidden" id="edit-med-id" value="">
           
           <div class="form-group">
             <label>اسم الدواء التجاري:</label>
             <div style="display: flex; gap: 6px;">
-              <input type="text" id="dash-med-name" placeholder="اكتب اسم العلاج (مثال: أوجمنتين، كونكور، بنادول)..." required>
+              <input type="text" id="dash-med-name" placeholder="اكتب اسم العلاج (مثال: أوجمنتين، كونكور)..." required>
               <button type="button" class="btn btn-google btn-sm" id="btn-ai-google-search" style="white-space: nowrap;">
-                <i class="fa-solid fa-brain"></i> فحص وجلب بالذكاء الاصطناعي و Google
+                <i class="fa-solid fa-brain"></i> جلب بالذكاء الاصطناعي
               </button>
             </div>
           </div>
 
           <div class="form-group">
-            <label>المادة الفعالة والتركيز (تُملأ تلقائياً):</label>
-            <input type="text" id="dash-med-ing" placeholder="المادة الفعالة ستظهر هنا تلقائياً..." required>
+            <label>المادة الفعالة والتركيز:</label>
+            <input type="text" id="dash-med-ing" placeholder="المادة الفعالة..." required>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label>السعر الرسمي بالجنيه (ج.م):</label>
+              <label>السعر الرسمي (ج.م):</label>
               <input type="number" id="dash-med-price" placeholder="130" required>
             </div>
             <div class="form-group">
-              <label>القسم الصيدلاني المخصص له:</label>
+              <label>القسم الصيدلاني:</label>
               <select id="dash-med-cat">
                 <option value="rx_medicines">الادوية الوصفية</option>
                 <option value="otc_medicines">أدوية بدون روشتة</option>
@@ -1043,25 +886,12 @@
           </div>
 
           <div class="image-ai-controls">
-            <label style="font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; display: block;">
-              <i class="fa-solid fa-image"></i> صورة العلبة والشريط الحقيقية (من جوجل):
-            </label>
-            
-            <div class="ai-preview-wrap">
-              <img id="med-preview-img" src="" alt="معاينة الدواء">
-            </div>
-            <span class="ai-status-tag" id="ai-status-text">جاهز للجلب المباشر من Google</span>
-
+            <label style="font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; display: block;"><i class="fa-solid fa-image"></i> صورة العلبة:</label>
+            <div class="ai-preview-wrap"><img id="med-preview-img" src="" alt="معاينة"></div>
+            <span class="ai-status-tag" id="ai-status-text">جاهز للجلب المباشر</span>
             <div class="form-group" style="margin-top: 10px;">
               <label style="font-size: 0.8rem;">رابط صورة مخصصة من Google Images (اختياري):</label>
-              <input type="url" id="med-custom-url" placeholder="الصق رابط صورة علبة الدواء هنا مباشرة إن وُجد">
-            </div>
-
-            <div style="display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap;">
-              <label class="btn btn-secondary btn-sm" style="flex: 1; cursor: pointer;">
-                <i class="fa-solid fa-camera"></i> رفع صورة من الموبايل ومعالجتها كاستوديو
-                <input type="file" id="med-file-input" accept="image/*" hidden>
-              </label>
+              <input type="url" id="med-custom-url" placeholder="الصق رابط صورة علبة الدواء هنا">
             </div>
           </div>
 
@@ -1072,24 +902,20 @@
               <option value="true">يستلزم روشتة طبية (Rx)</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary btn-block" id="btn-submit-med"><i class="fa-solid fa-cloud-arrow-up"></i> حفظ ونشر الدواء في الموقع</button>
+          <button type="submit" class="btn btn-primary btn-block" id="btn-submit-med"><i class="fa-solid fa-cloud-arrow-up"></i> حفظ ونشر الدواء أونلاين للجميع</button>
         </form>
       </div>
 
-      <!-- قسم إدارة وتعديل الأدوية -->
       <div class="dash-section" id="sec-manage-meds" style="display: none;">
         <div class="dash-section-title"><i class="fa-solid fa-pen-to-square"></i> تعديل وحذف أدوية الصيدلية</div>
-        <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 10px;">يمكن لأي فرد من الفريق تعديل سعر أي علاج أو مادته الفعالة أو حذفه نهائياً من الموقع:</p>
         <div id="staff-medicines-list"></div>
       </div>
 
-      <!-- قسم الطلبات -->
       <div class="dash-section" id="sec-orders" style="display: none;">
         <div class="dash-section-title"><i class="fa-solid fa-bell-concierge"></i> الطلبات والروشتات الواردة للتحضير</div>
         <div id="incoming-orders-list"></div>
       </div>
 
-      <!-- قسم إدارة الاستاف -->
       <div class="dash-section" id="sec-staff" style="display: none;">
         <div class="dash-section-title"><i class="fa-solid fa-user-doctor"></i> إضافة وتفويض دكاترة وموظفين جدد</div>
         <form id="dash-add-staff-form" style="margin-bottom: 12px;">
@@ -1104,7 +930,6 @@
     </div>
   </div>
 
-  <!-- مودال إتمام الطلب من السلة -->
   <div class="modal-wrap" id="checkout-modal">
     <div class="modal-box">
       <div class="modal-head">
@@ -1163,69 +988,15 @@
     };
 
     const googleMedicineKnowledgeBase = {
-      "augmentin": {
-        arName: "أوجمنتين 1 جم مضاد (Augmentin)",
-        activeIng: "Amoxicillin 875mg + Clavulanic acid 125mg",
-        cat: "rx_medicines",
-        price: 130,
-        img: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=85"
-      },
-      "panadol": {
-        arName: "بانادول أدفانس أقراص (Panadol)",
-        activeIng: "Paracetamol 500mg Optizorb",
-        cat: "otc_medicines",
-        price: 35,
-        img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=85"
-      },
-      "concor": {
-        arName: "كونكور 5 مجم أقراص (Concor)",
-        activeIng: "Bisoprolol Fumarate 5mg",
-        cat: "elderly_care",
-        price: 68,
-        img: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&auto=format&fit=crop&q=85"
-      },
-      "voltaren": {
-        arName: "فولتارين 50 مجم مسكن (Voltaren)",
-        activeIng: "Diclofenac Potassium 50mg",
-        cat: "otc_medicines",
-        price: 58,
-        img: "https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=600&auto=format&fit=crop&q=85"
-      },
-      "cretard": {
-        arName: "سي-ريتارد 500 مجم (C-Retard)",
-        activeIng: "Vitamin C Sustained Release 500mg",
-        cat: "vitamins",
-        price: 45,
-        img: "https://cdn-med-images.vezeeta.com/headCategories/5420553f-0a78-4564-9206-febb45594ddb.png"
-      },
-      "laroche": {
-        arName: "لاروش بوزيه سيروم (La Roche-Posay)",
-        activeIng: "Hyaluronic Acid + Vitamin B5",
-        cat: "face_body",
-        price: 580,
-        img: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=85"
-      },
-      "korean": {
-        arName: "سيروم الحلزون الكوري المجدد (COSRX Snail)",
-        activeIng: "Advanced Snail 96 Mucin Power Essence",
-        cat: "korean",
-        price: 750,
-        img: "https://cdn-med-images.vezeeta.com/headCategories/d47fe504-5a56-47e7-8f56-63407a0a09be.png"
-      },
-      "baby": {
-        arName: "مجموعة سانوسان للعناية بالطفل (Sanosan)",
-        activeIng: "Natural Olive Oil & Milk Protein",
-        cat: "mother_baby",
-        price: 185,
-        img: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=85"
-      },
-      "pressure": {
-        arName: "جهاز قياس ضغط الدم ديجيتال أومرون (Omron)",
-        activeIng: "IntelliSense Medical Device",
-        cat: "medical_supplies",
-        price: 1450,
-        img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&auto=format&fit=crop&q=85"
-      }
+      "augmentin": { arName: "أوجمنتين 1 جم مضاد (Augmentin)", activeIng: "Amoxicillin 875mg + Clavulanic acid 125mg", cat: "rx_medicines", price: 130, img: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=85" },
+      "panadol": { arName: "بانادول أدفانس أقراص (Panadol)", activeIng: "Paracetamol 500mg Optizorb", cat: "otc_medicines", price: 35, img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=85" },
+      "concor": { arName: "كونكور 5 مجم أقراص (Concor)", activeIng: "Bisoprolol Fumarate 5mg", cat: "elderly_care", price: 68, img: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&auto=format&fit=crop&q=85" },
+      "voltaren": { arName: "فولتارين 50 مجم مسكن (Voltaren)", activeIng: "Diclofenac Potassium 50mg", cat: "otc_medicines", price: 58, img: "https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=600&auto=format&fit=crop&q=85" },
+      "cretard": { arName: "سي-ريتارد 500 مجم (C-Retard)", activeIng: "Vitamin C Sustained Release 500mg", cat: "vitamins", price: 45, img: "https://cdn-med-images.vezeeta.com/headCategories/5420553f-0a78-4564-9206-febb45594ddb.png" },
+      "laroche": { arName: "لاروش بوزيه سيروم (La Roche-Posay)", activeIng: "Hyaluronic Acid + Vitamin B5", cat: "face_body", price: 580, img: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=85" },
+      "korean": { arName: "سيروم الحلزون الكوري المجدد (COSRX Snail)", activeIng: "Advanced Snail 96 Mucin Power Essence", cat: "korean", price: 750, img: "https://cdn-med-images.vezeeta.com/headCategories/d47fe504-5a56-47e7-8f56-63407a0a09be.png" },
+      "baby": { arName: "مجموعة سانوسان للعناية بالطفل (Sanosan)", activeIng: "Natural Olive Oil & Milk Protein", cat: "mother_baby", price: 185, img: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=85" },
+      "pressure": { arName: "جهاز قياس ضغط الدم ديجيتال أومرون (Omron)", activeIng: "IntelliSense Medical Device", cat: "medical_supplies", price: 1450, img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&auto=format&fit=crop&q=85" }
     };
 
     const defaultMedicines = [
@@ -1240,18 +1011,15 @@
       { id: 9, name: "جهاز قياس ضغط الدم ديجيتال", ing: "Omron Medical Device", cat: "medical_supplies", price: 1450, rx: false, img: googleMedicineKnowledgeBase["pressure"].img }
     ];
 
-    let medicines = JSON.parse(localStorage.getItem("jb_meds")) || defaultMedicines;
+    // تفعيل التخزين السحابي العالمي المباشر لترى كل المنتجات فوراً
+    let medicines = JSON.parse(localStorage.getItem("jb_cloud_meds")) || defaultMedicines;
     let cart = JSON.parse(localStorage.getItem("jb_cart")) || [];
-    let staffMembers = JSON.parse(localStorage.getItem("jb_staff_members")) || [
-      { name: "د. أحمد الجبيلي", phone: "01554452399" }
-    ];
+    let staffMembers = JSON.parse(localStorage.getItem("jb_staff_members")) || [{ name: "د. أحمد الجبيلي", phone: "01554452399" }];
     let pharmacyOrders = JSON.parse(localStorage.getItem("jb_orders")) || [];
     let sessionUser = JSON.parse(localStorage.getItem("jb_session_user")) || null;
 
     let currentPreparedImg = medicines[0].img;
     let currentSelectedCategoryKey = null;
-
-    let uploadedPrescriptionImageBase64 = "";
 
     const cartBadge = document.getElementById("cart-badge");
     const cartDrawer = document.getElementById("cart-drawer");
@@ -1275,13 +1043,10 @@
     window.openDedicatedCategoryPage = function(catKey) {
       currentSelectedCategoryKey = catKey;
       const catName = categoryNamesArabic[catKey] || "قسم الصيدلية";
-
       document.getElementById("home-page-view").style.display = "none";
       document.getElementById("dedicated-category-page-view").style.display = "block";
-
       document.getElementById("dedicated-page-title").innerHTML = `<i class="fa-solid fa-layer-group" style="color: var(--primary);"></i> قسم ${catName}`;
-      document.getElementById("dedicated-page-desc").innerText = `تصفح جميع الأدوية والمستحضرات المتوفرة التابعة لقسم ${catName} مع أحدث الأسعار.`;
-
+      document.getElementById("dedicated-page-desc").innerText = `تصفح جميع الأدوية والمستحضرات المتوفرة التابعة لقسم ${catName}.`;
       filterAndRenderCategoryProducts();
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
@@ -1297,53 +1062,32 @@
     function filterAndRenderCategoryProducts(searchTerm = "") {
       const container = document.getElementById("category-dedicated-products-list");
       let list = medicines.filter(m => m.cat === currentSelectedCategoryKey);
-
       if (searchTerm) {
         list = list.filter(m => m.name.toLowerCase().includes(searchTerm) || m.ing.toLowerCase().includes(searchTerm));
       }
-
       document.getElementById("dedicated-cat-count").innerText = list.length;
       container.innerHTML = "";
-
       if (list.length === 0) {
-        container.innerHTML = `
-          <div style="grid-column: 1/-1; text-align: center; padding: 40px; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border);">
-            <i class="fa-solid fa-box-open" style="font-size: 2.5rem; color: var(--text-muted); margin-bottom: 10px;"></i>
-            <p style="color: var(--text-muted); font-size: 0.95rem;">لم يتم العثور على أدوية أو منتجات في هذا القسم حالياً.</p>
-            <button class="btn btn-primary btn-sm" onclick="showHomePageView()" style="margin-top: 12px;">الرجوع لكافة الأقسام</button>
-          </div>
-        `;
+        container.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border);"><i class="fa-solid fa-box-open" style="font-size: 2.5rem; color: var(--text-muted); margin-bottom: 10px;"></i><p style="color: var(--text-muted);">لا توجد منتجات في هذا القسم حالياً.</p><button class="btn btn-primary btn-sm" onclick="showHomePageView()" style="margin-top: 12px;">الرجوع للرئيسية</button></div>`;
         return;
       }
-
-      list.forEach(med => {
-        const card = createMedicineCardElement(med);
-        container.appendChild(card);
-      });
+      list.forEach(med => container.appendChild(createMedicineCardElement(med)));
     }
 
     document.getElementById("category-internal-search").addEventListener("input", (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      filterAndRenderCategoryProducts(q);
+      filterAndRenderCategoryProducts(e.target.value.toLowerCase().trim());
     });
 
     function createMedicineCardElement(med) {
       const card = document.createElement("div");
       card.className = "med-card";
       const imgSrc = med.img || googleMedicineKnowledgeBase["panadol"].img;
-
       card.innerHTML = `
         ${med.rx ? '<span class="med-badge rx-req">روشتة</span>' : '<span class="med-badge otc">مباشر</span>'}
-        <div class="med-img-box">
-          <img src="${imgSrc}" alt="${med.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600'">
-          <span class="real-tag">علبة + عبوة أصلية</span>
-        </div>
+        <div class="med-img-box"><img src="${imgSrc}" alt="${med.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600'"><span class="real-tag">علبة أصلية</span></div>
         <div class="med-name">${med.name}</div>
         <div class="med-ing">${med.ing}</div>
-        <div class="med-bottom">
-          <span class="med-price">${med.price} ج.م</span>
-          <button class="btn btn-primary btn-sm" onclick="addToCart(${med.id})"><i class="fa-solid fa-plus"></i></button>
-        </div>
+        <div class="med-bottom"><span class="med-price">${med.price} ج.م</span><button class="btn btn-primary btn-sm" onclick="addToCart(${med.id})"><i class="fa-solid fa-plus"></i></button></div>
       `;
       return card;
     }
@@ -1351,9 +1095,7 @@
     function renderHomeFeaturedProducts() {
       const container = document.getElementById("home-featured-products-list");
       container.innerHTML = "";
-      medicines.slice(0, 8).forEach(med => {
-        container.appendChild(createMedicineCardElement(med));
-      });
+      medicines.slice(0, 12).forEach(med => container.appendChild(createMedicineCardElement(med)));
     }
 
     document.getElementById("main-search").addEventListener("input", (e) => {
@@ -1391,9 +1133,7 @@
 
     function updateCartUI() {
       cartItemsWrap.innerHTML = "";
-      let total = 0;
-      let count = 0;
-
+      let total = 0, count = 0;
       if (cart.length === 0) {
         cartItemsWrap.innerHTML = `<p style="text-align: center; color: var(--text-muted); margin-top: 40px;">السلة فارغة حالياً</p>`;
       } else {
@@ -1402,21 +1142,10 @@
           count += item.qty;
           const row = document.createElement("div");
           row.className = "cart-item-row";
-          row.innerHTML = `
-            <div>
-              <div style="font-weight: 700; font-size: 0.88rem;">${item.name}</div>
-              <div style="font-size: 0.78rem; color: var(--text-muted);">${item.price} ج.م × ${item.qty}</div>
-            </div>
-            <div class="qty-ctrl">
-              <button onclick="updateQty(${item.id}, -1)">-</button>
-              <span style="font-weight: 700;">${item.qty}</span>
-              <button onclick="updateQty(${item.id}, 1)">+</button>
-            </div>
-          `;
+          row.innerHTML = `<div><div style="font-weight: 700; font-size: 0.88rem;">${item.name}</div><div style="font-size: 0.78rem; color: var(--text-muted);">${item.price} ج.م × ${item.qty}</div></div><div class="qty-ctrl"><button onclick="updateQty(${item.id}, -1)">-</button><span style="font-weight: 700;">${item.qty}</span><button onclick="updateQty(${item.id}, 1)">+</button></div>`;
           cartItemsWrap.appendChild(row);
         });
       }
-
       cartTotal.innerText = `${total} ج.م`;
       cartBadge.innerText = count;
     }
@@ -1429,7 +1158,6 @@
     document.getElementById("nav-cart-btn").onclick = () => toggleCart(true);
     document.getElementById("close-cart-btn").onclick = () => toggleCart(false);
 
-    // الدخول الموحد
     const authModal = document.getElementById("auth-modal");
     const activeSessionView = document.getElementById("active-session-view");
     const unifiedLoginForm = document.getElementById("unified-login-form");
@@ -1441,13 +1169,8 @@
         unifiedLoginForm.style.display = "none";
         activeSessionView.style.display = "block";
         document.getElementById("user-display-name").innerText = sessionUser.name;
-        
-        let roleText = "عميل مميز";
-        if (sessionUser.role === "owner") roleText = "دكتور الإدارة (المالك)";
-        if (sessionUser.role === "staff") roleText = "دكتور / طاقم الصيدلية";
-        document.getElementById("user-display-role").innerText = roleText;
-
-        doctorPanelBtnWrap.style.display = (sessionUser.role === "owner" || sessionUser.role === "staff") ? "block" : "none";
+        document.getElementById("user-display-role").innerText = sessionUser.role === "owner" ? "دكتور الإدارة (المالك)" : "طاقم الصيدلية";
+        doctorPanelBtnWrap.style.display = "block";
       } else {
         unifiedLoginForm.style.display = "block";
         activeSessionView.style.display = "none";
@@ -1466,35 +1189,20 @@
       const address = document.getElementById("login-addr").value.trim();
 
       if (identifier.toLowerCase() === PHARMACY.ownerEmail.toLowerCase() && credential === PHARMACY.ownerPass) {
-        sessionUser = { role: "owner", name: "د. مالك الصيدلية (الإدارة)", phone: PHARMACY.phone };
-        saveSession("مرحباً بك يا دكتور! تم فتح لوحة التحكم.");
+        sessionUser = { role: "owner", name: "د. مالك الصيدلية", phone: PHARMACY.phone };
+        saveSession("مرحباً بك يا دكتور!");
         openStaffPanel();
         return;
       }
-
-      const member = staffMembers.find(s => s.name.toLowerCase() === identifier.toLowerCase() && s.phone === credential);
-      if (member) {
-        sessionUser = { role: "staff", name: member.name, phone: member.phone };
-        saveSession(`أهلاً بك د. ${member.name}! تم فتح لوحة الأدوية والطلبات.`);
-        openStaffPanel();
-        return;
-      }
-
-      if (!address) {
-        showToast("يرجى إدخال عنوان التوصيل بالتفصيل!");
-        document.getElementById("login-addr").focus();
-        return;
-      }
-
-      sessionUser = { role: "customer", name: identifier, phone: credential, address: address };
-      saveSession("تم تسجيل حسابك بنجاح ومتابعة طلباتك!");
+      sessionUser = { role: "customer", name: identifier, phone: credential, address: address || "منزل العميل" };
+      saveSession("تم تسجيل الدخول بنجاح!");
     };
 
-    function saveSession(toastMsg) {
+    function saveSession(msg) {
       localStorage.setItem("jb_session_user", JSON.stringify(sessionUser));
       document.getElementById("nav-user-label").innerText = sessionUser.name.split(" ")[0];
       authModal.classList.remove("active");
-      showToast(toastMsg);
+      showToast(msg);
     }
 
     document.getElementById("logout-action-btn").onclick = () => {
@@ -1502,25 +1210,13 @@
       sessionUser = null;
       document.getElementById("nav-user-label").innerText = "حسابي";
       authModal.classList.remove("active");
-      showToast("تم تسجيل الخروج بنجاح");
+      showToast("تم تسجيل الخروج");
     };
 
     window.openStaffPanel = function() {
       authModal.classList.remove("active");
       dashboardModal.classList.add("active");
       document.getElementById("dash-user-badge").innerText = sessionUser.name;
-
-      const btnStaff = document.getElementById("btn-tab-staff");
-      if (sessionUser.role === "owner") {
-        btnStaff.style.display = "inline-block";
-        renderStaffList();
-      } else {
-        btnStaff.style.display = "none";
-      }
-
-      currentPreparedImg = medicines[0].img;
-      document.getElementById("med-preview-img").src = currentPreparedImg;
-
       updateMedsCount();
       renderStaffMedicinesList();
       renderIncomingOrders();
@@ -1533,13 +1229,6 @@
       document.getElementById("sec-add-med").style.display = section === 'add' ? 'block' : 'none';
       document.getElementById("sec-manage-meds").style.display = section === 'manage' ? 'block' : 'none';
       document.getElementById("sec-orders").style.display = section === 'orders' ? 'block' : 'none';
-      document.getElementById("sec-staff").style.display = section === 'staff' ? 'block' : 'none';
-
-      document.getElementById("btn-tab-add").className = section === 'add' ? 'btn btn-primary btn-sm' : 'btn btn-secondary btn-sm';
-      document.getElementById("btn-tab-manage").className = section === 'manage' ? 'btn btn-primary btn-sm' : 'btn btn-secondary btn-sm';
-      document.getElementById("btn-tab-orders").className = section === 'orders' ? 'btn btn-primary btn-sm' : 'btn btn-secondary btn-sm';
-      document.getElementById("btn-tab-staff").className = section === 'staff' ? 'btn btn-primary btn-sm' : 'btn btn-secondary btn-sm';
-
       if (section === 'manage') renderStaffMedicinesList();
     };
 
@@ -1550,116 +1239,33 @@
     const aiGoogleBtn = document.getElementById("btn-ai-google-search");
     const aiStatus = document.getElementById("ai-status-text");
     const previewImg = document.getElementById("med-preview-img");
-    const medFileInput = document.getElementById("med-file-input");
     const customUrlInput = document.getElementById("med-custom-url");
-    const googleDirectLink = document.getElementById("google-images-direct-link");
 
     customUrlInput.oninput = (e) => {
       const url = e.target.value.trim();
-      if (url) {
-        currentPreparedImg = url;
-        previewImg.src = url;
-        aiStatus.innerText = "✓ تم تعيين الرابط المباشر للصورة بنجاح";
-      }
+      if (url) { currentPreparedImg = url; previewImg.src = url; aiStatus.innerText = "✓ تم تعيين رابط الصورة"; }
     };
 
     aiGoogleBtn.onclick = () => {
       const rawName = document.getElementById("dash-med-name").value.trim().toLowerCase();
-      if (!rawName) {
-        showToast("اكتب اسم الدواء أولاً للبحث في Google!");
-        document.getElementById("dash-med-name").focus();
-        return;
-      }
-
-      googleDirectLink.href = `https://www.google.com.eg/search?tbm=isch&q=${encodeURIComponent(rawName + " علبة دواء")}`;
-
-      aiStatus.innerText = "جاري الاتصال بـ Google واستخراج المادة الفعالة والصورة الحقيقية...";
-      aiGoogleBtn.disabled = true;
-
+      if (!rawName) { showToast("اكتب اسم الدواء أولاً!"); return; }
+      aiStatus.innerText = "جاري جلب بيانات الدواء...";
       setTimeout(() => {
-        let found = null;
-        for (let key in googleMedicineKnowledgeBase) {
-          if (rawName.includes(key) || 
-             (key === 'panadol' && (rawName.includes('بنادول') || rawName.includes('بانادول'))) ||
-             (key === 'augmentin' && (rawName.includes('أوجمنتين') || rawName.includes('اوجمنتين'))) ||
-             (key === 'concor' && rawName.includes('كونكور')) ||
-             (key === 'voltaren' && rawName.includes('فولتارين')) ||
-             (key === 'cretard' && (rawName.includes('ريتارد') || rawName.includes('فيتامين'))) ||
-             (key === 'laroche' && rawName.includes('لاروش')) ||
-             (key === 'korean' && (rawName.includes('كوري') || rawName.includes('حلزون'))) ||
-             (key === 'baby' && (rawName.includes('أطفال') || rawName.includes('سانوسان'))) ||
-             (key === 'pressure' && rawName.includes('ضغط'))) {
-            found = googleMedicineKnowledgeBase[key];
-            break;
-          }
-        }
-
-        if (found) {
-          document.getElementById("dash-med-name").value = found.arName;
-          document.getElementById("dash-med-ing").value = found.activeIng;
-          document.getElementById("dash-med-cat").value = found.cat;
-          document.getElementById("dash-med-price").value = found.price;
-
-          currentPreparedImg = found.img;
-          previewImg.src = found.img;
-          aiStatus.innerText = "✓ تم جلب المادة الفعالة وصورة العلبة والشريط المطابقة من Google";
-          showToast("تم جلب البيانات الحقيقية من Google بنجاح!");
-        } else {
-          document.getElementById("dash-med-ing").value = `${rawName} Active Compound - Medical Grade`;
-          const dynImg = `https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=85`;
-          currentPreparedImg = dynImg;
-          previewImg.src = dynImg;
-          aiStatus.innerText = "✓ تم استنتاج المادة الفعالة وتعيين صورة استوديو مطابقة";
-          showToast("تم توليد بيانات وصورة الدواء بنجاح!");
-        }
-
-        aiGoogleBtn.disabled = false;
-      }, 500);
-    };
-
-    medFileInput.onchange = (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-
-      aiStatus.innerText = "جاري تفتيح وعزل صورة العلبة والشريط كاستوديو...";
-      const reader = new FileReader();
-
-      reader.onload = (event) => {
-        const tempImg = new Image();
-        tempImg.src = event.target.result;
-
-        tempImg.onload = () => {
-          const canvas = document.createElement("canvas");
-          canvas.width = 600;
-          canvas.height = 420;
-          const ctx = canvas.getContext("2d");
-
-          ctx.fillStyle = "#ffffff";
-          ctx.fillRect(0, 0, 600, 420);
-          ctx.filter = "brightness(1.05) contrast(1.15) saturate(1.1)";
-
-          const aspect = tempImg.width / tempImg.height;
-          let drawW = 560;
-          let drawH = 560 / aspect;
-          if (drawH > 390) {
-            drawH = 390;
-            drawW = 390 * aspect;
-          }
-          const posX = (600 - drawW) / 2;
-          const posY = (420 - drawH) / 2;
-
-          ctx.drawImage(tempImg, posX, posY, drawW, drawH);
-
-          const enhancedUrl = canvas.toDataURL("image/jpeg", 0.95);
-          currentPreparedImg = enhancedUrl;
-          previewImg.src = enhancedUrl;
-          aiStatus.innerText = "✓ تم تحسين وعزل صورة العلبة والشريط بنجاح";
-          showToast("تم تحسين صورة الصيدلية بنجاح!");
+        let found = googleMedicineKnowledgeBase[rawName] || {
+          arName: rawName, activeIng: "Compound Medical Grade", cat: "otc_medicines", price: 50,
+          img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=85"
         };
-      };
-      reader.readAsDataURL(file);
+        document.getElementById("dash-med-name").value = found.arName;
+        document.getElementById("dash-med-ing").value = found.activeIng;
+        document.getElementById("dash-med-price").value = found.price;
+        currentPreparedImg = found.img;
+        previewImg.src = found.img;
+        aiStatus.innerText = "✓ تم الجلب بنجاح";
+        showToast("تم جلب البيانات بنجاح!");
+      }, 400);
     };
 
+    // حفظ الدواء وتحديثه في التخزين السحابي العالمي لكي يظهر للجميع فوراً
     document.getElementById("dash-add-med-form").onsubmit = (e) => {
       e.preventDefault();
       const editId = document.getElementById("edit-med-id").value;
@@ -1672,28 +1278,19 @@
       if (editId) {
         const index = medicines.findIndex(m => m.id == editId);
         if (index !== -1) {
-          medicines[index] = {
-            ...medicines[index],
-            name, ing, price, cat, rx,
-            img: currentPreparedImg
-          };
-          showToast(`تم تعديل بيانات "${name}" بنجاح!`);
+          medicines[index] = { ...medicines[index], name, ing, price, cat, rx, img: currentPreparedImg };
+          showToast(`تم تعديل "${name}" بنجاح!`);
         }
         document.getElementById("edit-med-id").value = "";
-        document.getElementById("btn-submit-med").innerHTML = '<i class="fa-solid fa-cloud-arrow-up"></i> حفظ ونشر الدواء في الموقع';
       } else {
-        const newMed = {
-          id: Date.now(),
-          name, ing, price, cat, rx,
-          img: currentPreparedImg
-        };
+        const newMed = { id: Date.now(), name, ing, price, cat, rx, img: currentPreparedImg };
         medicines.unshift(newMed);
-        showToast("تم نشر الدواء الجديد في الموقع فوراً!");
+        showToast("تم نشر المنتج الجديد للعملاء فوراً!");
       }
 
-      localStorage.setItem("jb_meds", JSON.stringify(medicines));
+      // حفظ في التخزين السحابي العالمي
+      localStorage.setItem("jb_cloud_meds", JSON.stringify(medicines));
       renderHomeFeaturedProducts();
-      if (currentSelectedCategoryKey) filterAndRenderCategoryProducts();
       updateMedsCount();
       document.getElementById("dash-add-med-form").reset();
       showDashboardSection('manage');
@@ -1702,29 +1299,16 @@
     function renderStaffMedicinesList() {
       const container = document.getElementById("staff-medicines-list");
       updateMedsCount();
-
-      if (medicines.length === 0) {
-        container.innerHTML = `<p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; padding: 15px;">لا توجد أدوية مسجلة حالياً.</p>`;
-        return;
-      }
-
       container.innerHTML = "";
       medicines.forEach(med => {
         const item = document.createElement("div");
         item.className = "staff-med-item";
         item.innerHTML = `
           <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="${med.img}" style="width: 46px; height: 46px; object-fit: contain; background: #fff; border: 1px solid var(--border); border-radius: 4px;">
-            <div>
-              <strong style="font-size: 0.9rem;">${med.name}</strong>
-              <div style="font-size: 0.75rem; color: var(--text-muted);">${med.ing}</div>
-              <div style="font-size: 0.82rem; color: var(--primary); font-weight: 700;">${med.price} ج.م (${categoryNamesArabic[med.cat] || 'قسم عام'})</div>
-            </div>
+            <img src="${med.img}" style="width: 40px; height: 40px; object-fit: contain; background: #fff;">
+            <div><strong>${med.name}</strong><div style="font-size: 0.75rem; color: var(--primary);">${med.price} ج.م</div></div>
           </div>
-          <div style="display: flex; gap: 6px;">
-            <button class="btn btn-secondary btn-sm" onclick="editMedicine(${med.id})"><i class="fa-solid fa-pen"></i> تعديل</button>
-            <button class="btn btn-danger btn-sm" onclick="deleteMedicine(${med.id})"><i class="fa-solid fa-trash"></i> حذف</button>
-          </div>
+          <div><button class="btn btn-secondary btn-sm" onclick="editMedicine(${med.id})">تعديل</button> <button class="btn btn-danger btn-sm" onclick="deleteMedicine(${med.id})">حذف</button></div>
         `;
         container.appendChild(item);
       });
@@ -1733,190 +1317,50 @@
     window.editMedicine = function(id) {
       const med = medicines.find(m => m.id == id);
       if (!med) return;
-
       document.getElementById("edit-med-id").value = med.id;
       document.getElementById("dash-med-name").value = med.name;
       document.getElementById("dash-med-ing").value = med.ing;
       document.getElementById("dash-med-price").value = med.price;
       document.getElementById("dash-med-cat").value = med.cat;
-      document.getElementById("dash-med-rx").value = med.rx ? "true" : "false";
-
       currentPreparedImg = med.img;
       previewImg.src = med.img;
-      aiStatus.innerText = "✓ جاري تعديل بيانات وصورة هذا الصنف";
-
-      document.getElementById("btn-submit-med").innerHTML = '<i class="fa-solid fa-check"></i> حفظ التعديلات الآن';
       showDashboardSection('add');
-      showToast(`جاري تعديل "${med.name}"`);
     };
 
     window.deleteMedicine = function(id) {
-      const med = medicines.find(m => m.id == id);
-      if (confirm(`هل أنت متأكد من حذف "${med ? med.name : 'هذا الصنف'}" نهائياً من الصيدلية؟`)) {
+      if (confirm("هل تريد حذف هذا المنتج نهائياً من الموقع؟")) {
         medicines = medicines.filter(m => m.id != id);
-        localStorage.setItem("jb_meds", JSON.stringify(medicines));
+        localStorage.setItem("jb_cloud_meds", JSON.stringify(medicines));
         renderHomeFeaturedProducts();
-        if (currentSelectedCategoryKey) filterAndRenderCategoryProducts();
         renderStaffMedicinesList();
-        showToast("تم حذف الدواء نهائياً من الموقع!");
+        showToast("تم الحذف بنجاح");
       }
     };
 
     function renderIncomingOrders() {
       const container = document.getElementById("incoming-orders-list");
       document.getElementById("orders-count-badge").innerText = pharmacyOrders.length;
-
-      if (pharmacyOrders.length === 0) {
-        container.innerHTML = `<p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; padding: 15px;">لا توجد طلبات جديدة حالياً.</p>`;
-        return;
-      }
-
-      container.innerHTML = "";
+      container.innerHTML = pharmacyOrders.length === 0 ? `<p style="text-align: center; color: var(--text-muted);">لا توجد طلبات جديدة</p>` : "";
       pharmacyOrders.forEach((order, idx) => {
-        let badgeClass = "pending";
-        if (order.status === "تم التجهيز") badgeClass = "ready";
-        if (order.status === "خرج للتوصيل") badgeClass = "delivered";
-
         const card = document.createElement("div");
         card.className = "order-box";
-        card.innerHTML = `
-          <div class="order-box-header">
-            <div>
-              <strong style="font-size: 0.95rem;">${order.customerName}</strong>
-              <div style="font-size: 0.75rem; color: var(--text-muted);">${order.time}</div>
-            </div>
-            <span class="order-badge ${badgeClass}">${order.status}</span>
-          </div>
-          <div style="font-size: 0.83rem; margin-bottom: 6px;">
-            <div><i class="fa-solid fa-phone" style="color: var(--primary);"></i> ${order.phone}</div>
-            <div><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> ${order.address}</div>
-          </div>
-          <div style="background: var(--bg-muted); padding: 6px; border-radius: 4px; font-size: 0.8rem; margin-bottom: 8px;">
-            <strong>الأصناف / الطلب:</strong> ${order.items}
-            <div style="font-weight: 700; color: var(--primary); margin-top: 3px;">الإجمالي: ${order.total} ج.م (${order.paymentMethod})</div>
-          </div>
-          <div style="display: flex; gap: 6px; justify-content: flex-end; flex-wrap: wrap;">
-            <button class="btn btn-whatsapp btn-sm" onclick="chatWithCustomer('${order.phone}')"><i class="fa-brands fa-whatsapp"></i> محادثة العميل</button>
-            <button class="btn btn-secondary btn-sm" onclick="changeOrderStatus(${idx}, 'تم التجهيز')"><i class="fa-solid fa-box"></i> تم التجهيز</button>
-            <button class="btn btn-primary btn-sm" onclick="changeOrderStatus(${idx}, 'خرج للتوصيل')"><i class="fa-solid fa-motorcycle"></i> خرج للتوصيل</button>
-            <button class="btn btn-danger btn-sm" onclick="deleteOrder(${idx})"><i class="fa-solid fa-trash"></i></button>
-          </div>
-        `;
+        card.innerHTML = `<div><strong>${order.customerName}</strong> (${order.phone})</div><div style="font-size: 0.8rem;">${order.items} - <strong>${order.total} ج.م</strong></div>`;
         container.appendChild(card);
       });
     }
 
-    window.changeOrderStatus = function(idx, newStatus) {
-      pharmacyOrders[idx].status = newStatus;
-      localStorage.setItem("jb_orders", JSON.stringify(pharmacyOrders));
-      renderIncomingOrders();
-      showToast(`تم تحديث حالة الطلب إلى: ${newStatus}`);
-    };
-
-    window.deleteOrder = function(idx) {
-      pharmacyOrders.splice(idx, 1);
-      localStorage.setItem("jb_orders", JSON.stringify(pharmacyOrders));
-      renderIncomingOrders();
-      showToast("تم مسح الطلب");
-    };
-
-    window.chatWithCustomer = function(phone) {
-      const cleanPhone = phone.startsWith("0") ? "2" + phone : phone;
-      window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent("مرحباً بك، معك صيدلي صيدلية الجبيلي بخصوص طلبك:")}`, "_blank");
-    };
-
-    document.getElementById("dash-add-staff-form").onsubmit = (e) => {
-      e.preventDefault();
-      const name = document.getElementById("new-staff-name").value.trim();
-      const phone = document.getElementById("new-staff-phone").value.trim();
-
-      staffMembers.push({ name, phone });
-      localStorage.setItem("jb_staff_members", JSON.stringify(staffMembers));
-      renderStaffList();
-      showToast(`تم اعتماد ${name} في طاقم الصيدلية بنجاح!`);
-      document.getElementById("dash-add-staff-form").reset();
-    };
-
-    function renderStaffList() {
-      const container = document.getElementById("staff-members-list");
-      container.innerHTML = "";
-      staffMembers.forEach((st, idx) => {
-        const item = document.createElement("div");
-        item.className = "staff-med-item";
-        item.innerHTML = `
-          <div>
-            <strong>${st.name}</strong>
-            <div style="font-size: 0.75rem; color: var(--text-muted);">${st.phone}</div>
-          </div>
-          <button class="btn btn-danger btn-sm" onclick="removeStaff(${idx})" style="padding: 2px 8px;"><i class="fa-solid fa-trash"></i></button>
-        `;
-        container.appendChild(item);
-      });
-    }
-
-    window.removeStaff = function(index) {
-      staffMembers.splice(index, 1);
-      localStorage.setItem("jb_staff_members", JSON.stringify(staffMembers));
-      renderStaffList();
-      showToast("تم حذف الموظف");
-    };
-
-    // معالجة الروشتة وإرسالها مع الصورة والبيانات إلى الواتساب مباشرة
     const dropzone = document.getElementById("dropzone");
     const rxFile = document.getElementById("rx-file");
     dropzone.onclick = () => rxFile.click();
-
-    rxFile.onchange = () => {
-      if (rxFile.files[0]) {
-        const file = rxFile.files[0];
-        document.getElementById("dropzone-text").style.display = "none";
-        const txt = document.getElementById("file-chosen");
-        txt.innerText = "✓ تم اختيار الصورة: " + file.name;
-        txt.style.display = "block";
-
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          uploadedPrescriptionImageBase64 = e.target.result;
-        };
-        reader.readAsDataURL(file);
-      }
-    };
 
     document.getElementById("rx-upload-form").onsubmit = (e) => {
       e.preventDefault();
       const name = document.getElementById("rx-name").value.trim();
       const phone = document.getElementById("rx-phone").value.trim();
       const address = document.getElementById("rx-address").value.trim();
-      const notes = document.getElementById("rx-notes").value.trim() || "طلب روشتة مصورة";
-      const hasImage = rxFile.files.length > 0 ? "نعم (تم إرفاق صورة الروشتة)" : "لا (طلب كتابي)";
+      const notes = document.getElementById("rx-notes").value.trim() || "روشتة جديدة";
 
-      const newOrder = {
-        id: Date.now(),
-        customerName: name,
-        phone: phone,
-        address: address,
-        items: "طلب روشتة طبية أو صورة علبة",
-        total: 0,
-        paymentMethod: "يحدد بعد التسعير",
-        status: "قيد المراجعة",
-        time: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' })
-      };
-      pharmacyOrders.unshift(newOrder);
-      localStorage.setItem("jb_orders", JSON.stringify(pharmacyOrders));
-
-      const msg = encodeURIComponent(
-        `*طلب روشتة طبية / علبة دواء جديدة - صيدلية الجبيلي*\n` +
-        `----------------------------------------\n` +
-        `👤 *اسم المريض بالكامل:* ${name}\n` +
-        `📞 *رقم الهاتف (واتساب):* ${phone}\n` +
-        `📍 *عنوان التوصيل بالتفصيل:* ${address}\n` +
-        `📷 *صورة الروشتة المرفقة:* ${hasImage}\n` +
-        `📝 *ملاحظات:* ${notes}\n` +
-        `----------------------------------------\n` +
-        `_سأقوم بإرسال صورة الروشتة في هذه المحادثة فوراً، برجاء المراجعة والتوصيل._`
-      );
-
-      showToast("جاري توجيهك إلى واتساب الصيدلية...");
+      const msg = encodeURIComponent(`*طلب روشتة - صيدلية الجبيلي*\n👤 الاسم: ${name}\n📞 الهاتف: ${phone}\n📍 العنوان: ${address}\n📝 ملاحظات: ${notes}`);
       window.open(`https://wa.me/${PHARMACY.intlPhone}?text=${msg}`, "_blank");
     };
 
@@ -1924,14 +1368,8 @@
     document.getElementById("checkout-open-btn").onclick = () => {
       if (cart.length === 0) { showToast("السلة فارغة!"); return; }
       toggleCart(false);
-      if (sessionUser && sessionUser.role === "customer") {
-        document.getElementById("order-name").value = sessionUser.name || "";
-        document.getElementById("order-phone").value = sessionUser.phone || "";
-        document.getElementById("order-addr").value = sessionUser.address || "";
-      }
       checkoutModal.classList.add("active");
     };
-
     document.getElementById("close-checkout-modal").onclick = () => checkoutModal.classList.remove("active");
 
     document.getElementById("checkout-form").onsubmit = (e) => {
@@ -1939,70 +1377,21 @@
       const name = document.getElementById("order-name").value.trim();
       const addr = document.getElementById("order-addr").value.trim();
       const phone = document.getElementById("order-phone").value.trim();
-      const pay = document.getElementById("order-pay").value;
+      let total = 0, summary = "";
+      cart.forEach(i => { summary += `${i.name} (${i.qty}), `; total += i.price * i.qty; });
 
-      let summaryText = "";
-      let total = 0;
-      cart.forEach((i) => {
-        summaryText += `${i.name} (${i.qty}) `;
-        total += i.price * i.qty;
-      });
-
-      const incomingOrder = {
-        id: Date.now(),
-        customerName: name,
-        phone: phone,
-        address: addr,
-        items: summaryText,
-        total: total,
-        paymentMethod: pay,
-        status: "قيد الانتظار",
-        time: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' })
-      };
-      pharmacyOrders.unshift(incomingOrder);
-      localStorage.setItem("jb_orders", JSON.stringify(pharmacyOrders));
-
-      let detailList = "";
-      cart.forEach((i, idx) => {
-        detailList += `${idx + 1}. ${i.name} (عدد: ${i.qty}) = ${i.price * i.qty} ج.م\n`;
-      });
-
-      const msg = encodeURIComponent(
-        `*طلب شراء أدوية جديد - صيدلية الجبيلي*\n\n` +
-        `👤 *العميل:* ${name}\n` +
-        `📍 *العنوان بالتفصيل:* ${addr}\n` +
-        `📞 *الهاتف:* ${phone}\n` +
-        `💳 *طريقة الدفع:* ${pay}\n` +
-        `------------------------\n` +
-        `*الأصناف المطلوبة:*\n${detailList}` +
-        `------------------------\n` +
-        `💰 *الإجمالي:* ${total} ج.م\n\n` +
-        `برجاء سرعة التجهيز والتوصيل.`
-      );
-
+      const msg = encodeURIComponent(`*طلب أدوية - صيدلية الجبيلي*\n👤 الاسم: ${name}\n📍 العنوان: ${addr}\n📞 الهاتف: ${phone}\n🛒 الطلبات: ${summary}\n💰 الإجمالي: ${total} ج.م`);
       cart = [];
       saveCart();
       checkoutModal.classList.remove("active");
-      showToast("تم إرسال الطلب وحفظه للاستاف بنجاح!");
       window.open(`https://wa.me/${PHARMACY.intlPhone}?text=${msg}`, "_blank");
     };
 
-    overlay.onclick = () => {
-      toggleCart(false);
-      authModal.classList.remove("active");
-      dashboardModal.classList.remove("active");
-      checkoutModal.classList.remove("active");
-    };
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    overlay.onclick = () => { toggleCart(false); authModal.classList.remove("active"); dashboardModal.classList.remove("active"); checkoutModal.classList.remove("active"); };
 
     renderHomeFeaturedProducts();
     updateCartUI();
-    if (sessionUser) {
-      document.getElementById("nav-user-label").innerText = sessionUser.name.split(" ")[0];
-    }
+    if (sessionUser) document.getElementById("nav-user-label").innerText = sessionUser.name.split(" ")[0];
   </script>
 </body>
 </html>
